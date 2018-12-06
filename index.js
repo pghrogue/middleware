@@ -6,7 +6,7 @@ const morgan = require('morgan');
 const customMW = require('./middleware.js');
 
 const server = express();
-const PORT = 5454;
+const PORT = process.env.PORT || 5454;
 
 // Middleware
 server.use( 
